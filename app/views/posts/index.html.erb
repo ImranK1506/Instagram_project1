@@ -1,0 +1,20 @@
+<h1>Ninjagram</h1>
+
+<div class="posts-wrapper row">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <div class="post-head">
+        <div class="name">
+         Imran
+        </div>
+      </div>
+      <div class="image center-block">
+        <%= link_to (image_tag post.image.url(:small), class:'img-responsive'), post_path(post) %>
+      </div>
+      <p class="caption">
+        <%= post.caption %>
+      </p>
+    </div>
+  <% end %>
+</div>
+
