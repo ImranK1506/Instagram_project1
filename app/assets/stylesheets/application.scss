@@ -1,11 +1,20 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+h1 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  color: #61ffae;
+}
+
 body {  
-  background-color: #fafafa;
+  background-color: #000000;
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+.navbar-brand a:hover{
+  text-decoration: none;
+}
 .navbar-brand {
   a {
     color: #125688;
@@ -14,8 +23,8 @@ body {
 
 .navbar-default {
   background-color: #fff;
-  height: 54px;
-  .navbar-nav li a {
+  height: 60px;
+.navbar-nav li a {
     color: #125688;
   }
 }
@@ -47,9 +56,9 @@ body {
   color: #125688;
   font-size: 15px;
   line-height: 18px;
-  .thumbnail {}
-  .name {
-    display: block;
+.thumbnail {}
+.name {
+  display: block;
   }
 }
 
