@@ -1,8 +1,9 @@
 class Post < ActiveRecord::Base  
 
   belongs_to :user
-  
+
   validates :image, presence: true
+  validates :user_id, presence: true
 
   has_attached_file :image, styles: { 
   	:medium => "640x",
