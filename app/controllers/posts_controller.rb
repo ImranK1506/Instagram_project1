@@ -60,7 +60,7 @@ private
 
 	def owned_post
 		unless current_user == @post.user
-			flas[:alert] = "No touching this post!"
+			flash[:alert] = "No touching this post!"
 			redirect_to root_path
 		end
 	end
