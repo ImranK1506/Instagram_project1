@@ -58,9 +58,9 @@ private
 	    	@post = Post.find(params[:id])
 	end
 
-	def owned_post
-		unless current_user == @post.user
-			flash[:alert] = "No touching this post!"
-			redirect_to root_path
-		end
-	end
+	def owned_post  
+  		unless current_user == @post.user
+    		flash[:alert] = "Not your post!"
+    		redirect_to root_path
+  		end
+	end  

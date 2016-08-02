@@ -12,5 +12,5 @@ My first Instagram-like app. This project is crafted with the intentions to incr
 git clone https://github.com/ImranK1506/Instagram_project1
 
 
-Author
+<h2>Author</h2>
 Imran Khan
