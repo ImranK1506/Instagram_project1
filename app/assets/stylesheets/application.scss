@@ -203,7 +203,7 @@ html {
 }
 
 .registration-bg {
-  padding: 9em;
+  padding: 2%;
   height: 100%;
   background-image: image-url('backindex.jpg');
   background-size: cover;
@@ -260,4 +260,15 @@ html {
     text-align: center;
 
   }
+}
+
+/* ## users/sign_in # */
+
+#image-preview {
+  margin: 0px auto;
+}
+
+#post_image {
+  padding: 1em;
+  margin: 0px auto;
 }
