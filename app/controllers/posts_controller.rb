@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
-	before_action :owned_post, only: [:edit, :update, :destroy]
 	before_action :authenticate_user!
-	before_action :set_post, only: [:show, :edit, :update, :destroy]  
+	before_action :set_post, only: [:show, :edit, :update, :destroy]
+	before_action :owned_post, only: [:edit, :update, :destroy]
 
 	def index
 		@posts = Post.all
@@ -59,7 +59,7 @@ private
 	end
 
 	def owned_post  
-  		unless current_user == @post.user
+  		unless current_user.id == @post.user_id
     		flash[:alert] = "Not your post!"
     		redirect_to root_path
   		end

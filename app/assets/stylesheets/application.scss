@@ -1,6 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.navbar {
+  margin-bottom: 0px;
+}
+
+.alert {
+  margin-bottom: 0px;
+}
 
 .logo {
   margin: -15px 5px -10px 0px;
@@ -184,4 +191,73 @@ body {
   margin-bottom: 15px;
   padding: 7px 9px;
 }
-/* ## s## */
+
+/* ## users/sign_up ## */
+
+html {  
+  height: 100%;
+}
+
+.input-lg {
+  margin: 5%;
+}
+
+.registration-bg {
+  padding: 9em;
+  height: 100%;
+  background-image: image-url('backindex.jpg');
+  background-size: cover;
+}
+
+.log-in{
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  border: none;
+}
+
+.panel {
+  border-radius: 8px;
+}
+
+.panel-heading{
+  h1 {
+    text-align: center;
+
+  }
+}
+
+/* ## users/sign_in # */
+
+html {  
+  height: 100%;
+}
+
+.input-lg {
+  margin: 14%;
+}
+
+.login-bg {
+  padding: 9em;
+  height: 100%;
+  background-image: image-url('backindex1.jpg');
+  background-size: cover;
+}
+
+.log-in{
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  border: none;
+}
+
+.panel {
+  border-radius: 8px;
+}
+
+.panel-heading{
+  h1 {
+    text-align: center;
+
+  }
+}
